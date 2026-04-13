@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ambassador",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--experimental-sqlite", "server.js"],
+      "port": 3001,
+      "autoPort": false
+    }
+  ]
+}

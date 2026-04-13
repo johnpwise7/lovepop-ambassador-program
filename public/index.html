@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovepop Ambassador Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ═══ LANDING PAGE ════════════════════════════════════════ -->
+  <div id="page-landing" class="page active">
+
+    <!-- Landing Nav -->
+    <nav class="landing-nav">
+      <div class="landing-nav-inner">
+        <div class="logo">
+          <span class="logo-lp">LP</span>
+          <span class="logo-text">Lovepop Ambassadors</span>
+        </div>
+        <div class="landing-nav-actions">
+          <button class="btn-ghost" onclick="App.showLogin()">Log In</button>
+          <button class="btn-primary" onclick="App.scrollToSignup()">Apply Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now accepting ambassadors
+        </div>
+        <h1 class="hero-headline">Help create one billion<br><em>magical moments</em></h1>
+        <p class="hero-subtext">Join Lovepop's Ambassador Program and share the joy of cards that stop people in their tracks. Free product, early access, and real compensation—for people who love to celebrate life.</p>
+        <div class="hero-actions">
+          <button class="btn-hero-primary" onclick="App.scrollToSignup()">Apply to Be an Ambassador</button>
+          <button class="btn-hero-ghost" onclick="App.scrollToHow()">How it Works</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">1B+</span>
+            <span class="hero-stat-label">Magical moments goal</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">10K+</span>
+            <span class="hero-stat-label">Unique card designs</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">5★</span>
+            <span class="hero-stat-label">Average review</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="card-stack">
+          <div class="card-float card-float-3">
+            <div class="card-preview-inner">
+              <div class="card-preview-stars">✦ ✦ ✦</div>
+              <div class="card-preview-pop">❤️</div>
+              <div class="card-preview-label">Birthday Magic</div>
+            </div>
+          </div>
+          <div class="card-float card-float-2">
+            <div class="card-preview-inner">
+              <div class="card-preview-stars">✦ ✦ ✦</div>
+              <div class="card-preview-pop">🌸</div>
+              <div class="card-preview-label">Mother's Day</div>
+            </div>
+          </div>
+          <div class="card-float card-float-1">
+            <div class="card-preview-inner">
+              <div class="card-preview-stars">✦ ✦ ✦</div>
+              <div class="card-preview-pop">🎉</div>
+              <div class="card-preview-label">Celebrate!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="section-how">
+      <div class="section-inner">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">Your path from ambassador to partner</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Apply</h3>
+            <p class="step-desc">Fill out the short application below. Tell us about your audience and why you love Lovepop. We review every application personally.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Get Approved</h3>
+            <p class="step-desc">Our team reviews your application, checks your platforms, and lets you know within a few business days. Approved? Welcome to the family.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Create & Share</h3>
+            <p class="step-desc">Receive free product bundles, participate in campaigns, and share Lovepop with your audience authentically. Submit your posts to earn tier upgrades.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Level Up</h3>
+            <p class="step-desc">Progress through Bronze → Silver → Gold → Platinum → Diamond tiers. Each tier unlocks bigger bundles, early access, and real compensation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Lovepop / Story -->
+    <section class="section-story">
+      <div class="section-inner section-inner-story">
+        <div class="story-visual">
+          <div class="story-card-display">
+            <div class="story-pop-card">
+              <div class="story-pop-icon">💌</div>
+              <div class="story-pop-title">Lovepop Originals</div>
+              <div class="story-pop-sub">3D Paper Art Cards</div>
+              <div class="story-pop-stars">★★★★★</div>
+              <div class="story-pop-review">"She cried the good kind of tears." — Real review</div>
+            </div>
+          </div>
+        </div>
+        <div class="story-content">
+          <div class="section-label">The Lovepop Story</div>
+          <h2 class="section-title story-title">Cards that people actually keep forever</h2>
+          <p class="story-text">Lovepop isn't a greeting card company. It's a <strong>magical moment company</strong>. Our 3D paper art cards stop people in their tracks—the kind of gift that sits on a desk for years because nobody can bring themselves to throw it away.</p>
+          <p class="story-text">We built a whole system for having a stash of cards ready for every relationship and occasion. The right card at the right moment is one of the most powerful things a person can do—and we want ambassadors who believe that.</p>
+          <p class="story-text">If you find yourself giving Lovepop cards and watching people's reactions change, you're one of us. Let's do it together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tiers -->
+    <section class="section-tiers">
+      <div class="section-inner">
+        <div class="section-label">Ambassador Tiers</div>
+        <h2 class="section-title">The more you share, the better it gets</h2>
+        <p class="section-subtitle">Tier is calculated from your total approved posts combined with your total impressions. Keep creating—every post counts toward your next level.</p>
+        <div class="tiers-grid">
+          <div class="tier-card tier-bronze">
+            <div class="tier-gem">🥉</div>
+            <div class="tier-name">Bronze</div>
+            <div class="tier-threshold">Starting tier</div>
+            <ul class="tier-benefits">
+              <li>Welcome product bundle</li>
+              <li>Access to campaign briefs</li>
+              <li>Ambassador dashboard</li>
+              <li>Early product news</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-silver">
+            <div class="tier-gem">🥈</div>
+            <div class="tier-name">Silver</div>
+            <div class="tier-threshold">15+ score points</div>
+            <ul class="tier-benefits">
+              <li>Everything in Bronze</li>
+              <li>Expanded product bundles</li>
+              <li>Monthly product drops</li>
+              <li>Priority campaign access</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-gold">
+            <div class="tier-gem">🥇</div>
+            <div class="tier-name">Gold</div>
+            <div class="tier-threshold">35+ score points</div>
+            <ul class="tier-benefits">
+              <li>Everything in Silver</li>
+              <li>Custom stash bundles</li>
+              <li>1:1 partnership calls</li>
+              <li>Co-created content</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-platinum">
+            <div class="tier-gem">💎</div>
+            <div class="tier-name">Platinum</div>
+            <div class="tier-threshold">75+ score points</div>
+            <ul class="tier-benefits">
+              <li>Everything in Gold</li>
+              <li>Performance bonuses</li>
+              <li>Exclusive product previews</li>
+              <li>Lovepop HQ visits</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-diamond">
+            <div class="tier-gem">👑</div>
+            <div class="tier-name">Diamond</div>
+            <div class="tier-threshold">150+ score points</div>
+            <ul class="tier-benefits">
+              <li>Everything in Platinum</li>
+              <li>Affiliate commission</li>
+              <li>Paid partnership deals</li>
+              <li>Product co-design input</li>
+            </ul>
+          </div>
+        </div>
+        <p class="tier-note">Score = total approved posts + (total impressions ÷ 10,000)</p>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section-benefits">
+      <div class="section-inner">
+        <div class="section-label">Why Join</div>
+        <h2 class="section-title">Built for real creators, not one-off promotions</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🎁</div>
+            <h3>Free Product, Always</h3>
+            <p>Every ambassador receives free Lovepop cards and bundles. The more you create, the more we send. You will never pay for product as an ambassador.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Early Access</h3>
+            <p>Be the first to see new collections before they launch publicly. Share with your audience the moment they drop and own the conversation.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💰</div>
+            <h3>Real Compensation</h3>
+            <p>Top-tier ambassadors earn affiliate commissions and paid partnership fees. We believe in paying creators who drive real results.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🤝</div>
+            <h3>Genuine Partnership</h3>
+            <p>You get a dedicated Lovepop contact who knows you and your audience. No faceless portal—a real relationship with the team.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌟</div>
+            <h3>A Brand That Delivers</h3>
+            <p>Lovepop has 5-star reviews and customers who buy year after year. Recommending Lovepop to your audience will make them love you more, not less.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📈</div>
+            <h3>Content That Performs</h3>
+            <p>Unboxing a 3D pop-up card is naturally shareable and emotional. Lovepop content consistently outperforms standard gifting content in saves and shares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section id="signup-section" class="section-signup">
+      <div class="section-inner">
+        <div class="section-label">Apply Now</div>
+        <h2 class="section-title">Join the Ambassador Program</h2>
+        <p class="section-subtitle">Complete the form below and we'll review your application. We typically respond within 3–5 business days.</p>
+
+        <form id="signup-form" class="signup-form" onsubmit="App.submitSignup(event)">
+
+          <!-- Personal Info -->
+          <div class="form-section-title">About You</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="required">*</span></label>
+              <input type="text" name="name" class="form-input" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address <span class="required">*</span></label>
+              <input type="email" name="email" class="form-input" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" name="phone" class="form-input" placeholder="Optional" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Age Range <span class="required">*</span></label>
+              <select name="age_range" class="form-input" required>
+                <option value="">Select your age range</option>
+                <option value="18-24">18–24</option>
+                <option value="25-34">25–34</option>
+                <option value="35-44">35–44</option>
+                <option value="45-54">45–54</option>
+                <option value="55+">55+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Platforms -->
+          <div class="form-section-title">Your Platforms</div>
+          <p class="form-section-hint">Add at least one platform. Follower counts don't need to be exact—we care more about engagement and fit.</p>
+          <div class="platforms-grid">
+            <div class="platform-row">
+              <div class="platform-label"><span class="platform-icon platform-icon-ig">IG</span> Instagram</div>
+              <input type="text" name="instagram" class="form-input" placeholder="@yourhandle" />
+              <input type="number" name="instagram_followers" class="form-input follower-input" placeholder="Followers" min="0" />
+            </div>
+            <div class="platform-row">
+              <div class="platform-label"><span class="platform-icon platform-icon-tt">TT</span> TikTok</div>
+              <input type="text" name="tiktok" class="form-input" placeholder="@yourhandle" />
+              <input type="number" name="tiktok_followers" class="form-input follower-input" placeholder="Followers" min="0" />
+            </div>
+            <div class="platform-row">
+              <div class="platform-label"><span class="platform-icon platform-icon-yt">YT</span> YouTube</div>
+              <input type="text" name="youtube" class="form-input" placeholder="Channel name" />
+              <input type="number" name="youtube_followers" class="form-input follower-input" placeholder="Subscribers" min="0" />
+            </div>
+            <div class="platform-row">
+              <div class="platform-label"><span class="platform-icon platform-icon-li">LI</span> LinkedIn</div>
+              <input type="text" name="linkedin" class="form-input" placeholder="Profile URL or handle" />
+              <input type="number" name="linkedin_followers" class="form-input follower-input" placeholder="Followers" min="0" />
+            </div>
+          </div>
+
+          <!-- Audience -->
+          <div class="form-section-title">Your Audience</div>
+          <div class="form-group">
+            <label class="form-label">Describe Your Audience <span class="required">*</span></label>
+            <textarea name="audience_description" class="form-input form-textarea" placeholder="Who follows you? What content resonates? What demographics, interests, or communities do they belong to?" required rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Why Lovepop? <span class="required">*</span></label>
+            <textarea name="why_lovepop" class="form-input form-textarea" placeholder="Tell us why you want to be a Lovepop ambassador. Have you used our cards? What do your audience and relationships mean to you?" required rows="4"></textarea>
+          </div>
+
+          <div id="signup-error" class="form-error" style="display:none"></div>
+          <div id="signup-success" class="form-success" style="display:none">
+            <div class="success-icon">✓</div>
+            <div class="success-title">Application Submitted!</div>
+            <div class="success-text">Thank you for applying! We'll review your application and be in touch within 3–5 business days. Keep an eye on your inbox.</div>
+          </div>
+
+          <button type="submit" class="btn-submit" id="signup-submit-btn">Submit Application</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <div class="footer-inner">
+        <div class="logo">
+          <span class="logo-lp">LP</span>
+          <span class="logo-text" style="color:rgba(255,255,255,0.7)">Lovepop Ambassadors</span>
+        </div>
+        <p class="footer-tagline">Making every moment magical, one card at a time.</p>
+        <button class="btn-ghost footer-login" onclick="App.showLogin()">Team / Ambassador Login →</button>
+      </div>
+    </footer>
+
+  </div><!-- /#page-landing -->
+
+  <!-- ═══ LOGIN PAGE ════════════════════════════════════════ -->
+  <div id="page-login" class="page">
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-logo">
+          <span class="logo-lp logo-lp-lg">LP</span>
+        </div>
+        <h1 class="login-title">Welcome back</h1>
+        <p class="login-subtitle">Sign in to your Lovepop Ambassador account</p>
+
+        <div class="login-type-toggle">
+          <button class="login-type-btn active" id="btn-influencer-login" onclick="App.setLoginType('influencer')">Ambassador</button>
+          <button class="login-type-btn" id="btn-team-login" onclick="App.setLoginType('team')">Lovepop Team</button>
+        </div>
+
+        <form id="login-form" onsubmit="App.submitLogin(event)">
+          <div id="team-username-group" class="form-group" style="display:none">
+            <label class="form-label">Username</label>
+            <input type="text" id="login-username" class="form-input" placeholder="Username" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" id="login-email" class="form-input" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required />
+          </div>
+          <div id="login-error" class="form-error" style="display:none"></div>
+          <button type="submit" class="btn-submit" id="login-submit-btn">Sign In</button>
+        </form>
+
+        <div class="login-back">
+          <button class="btn-ghost" onclick="App.showLanding()">← Back to Ambassador Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TEAM DASHBOARD ═══════════════════════════════════ -->
+  <div id="page-team" class="page">
+
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo">
+          <span class="logo-lp">LP</span>
+          <span class="logo-text">Ambassador Program</span>
+        </div>
+        <nav class="header-nav">
+          <button class="nav-tab active" data-team-view="overview">Overview</button>
+          <button class="nav-tab" data-team-view="influencers">Influencers</button>
+          <button class="nav-tab" data-team-view="campaigns">Campaigns</button>
+          <button class="nav-tab" data-team-view="posts">Posts</button>
+        </nav>
+      </div>
+      <div class="header-right">
+        <span class="header-badge">Lovepop Team</span>
+        <button class="btn-secondary btn-sm" onclick="App.logout()">Log Out</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- Overview View -->
+      <div class="team-view active" id="team-view-overview">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Overview</h1>
+          </div>
+        </div>
+        <div id="team-overview-content">
+          <div class="stats-grid" id="overview-stats"></div>
+          <div class="overview-sections">
+            <div class="overview-section">
+              <div class="overview-section-header">
+                <h2 class="overview-section-title">Pending Applications</h2>
+                <button class="btn-link" onclick="App.teamNav('influencers', 'pending')">View All →</button>
+              </div>
+              <div id="pending-influencers-list"></div>
+            </div>
+            <div class="overview-section">
+              <div class="overview-section-header">
+                <h2 class="overview-section-title">Active Campaigns</h2>
+                <button class="btn-link" onclick="App.teamNav('campaigns')">View All →</button>
+              </div>
+              <div id="active-campaigns-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Influencers View -->
+      <div class="team-view" id="team-view-influencers">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Influencers</h1>
+            <span class="count-badge" id="influencer-count-badge">–</span>
+          </div>
+          <div class="toolbar-right">
+            <div class="search-wrap">
+              <input type="text" class="search-input" placeholder="Search by name, email, or handle..." id="influencer-search" oninput="App.filterInfluencers()" />
+            </div>
+            <div class="filter-tabs" id="influencer-status-filter">
+              <button class="filter-tab active" data-status="all" onclick="App.setInfluencerFilter(this)">All</button>
+              <button class="filter-tab" data-status="pending" onclick="App.setInfluencerFilter(this)">Pending</button>
+              <button class="filter-tab" data-status="approved" onclick="App.setInfluencerFilter(this)">Approved</button>
+              <button class="filter-tab" data-status="rejected" onclick="App.setInfluencerFilter(this)">Rejected</button>
+            </div>
+          </div>
+        </div>
+        <div class="influencer-grid" id="influencer-grid"></div>
+        <div id="influencer-empty" class="empty-state" style="display:none">
+          <div class="empty-icon">👥</div>
+          <div class="empty-title">No influencers found</div>
+          <div class="empty-text">Try adjusting your search or filter criteria.</div>
+        </div>
+      </div>
+
+      <!-- Campaigns View -->
+      <div class="team-view" id="team-view-campaigns">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Campaigns</h1>
+            <span class="count-badge" id="campaign-count-badge">–</span>
+          </div>
+          <div class="toolbar-right">
+            <button class="btn-primary" onclick="App.openCreateCampaign()">+ New Campaign</button>
+          </div>
+        </div>
+        <div class="campaign-grid" id="campaign-grid"></div>
+        <div id="campaign-empty" class="empty-state" style="display:none">
+          <div class="empty-icon">📣</div>
+          <div class="empty-title">No campaigns yet</div>
+          <div class="empty-text">Create your first campaign to get started.</div>
+        </div>
+      </div>
+
+      <!-- Posts View -->
+      <div class="team-view" id="team-view-posts">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Post Submissions</h1>
+          </div>
+          <div class="toolbar-right">
+            <div class="filter-tabs">
+              <button class="filter-tab active" data-post-status="all" onclick="App.setPostFilter(this)">All</button>
+              <button class="filter-tab" data-post-status="pending" onclick="App.setPostFilter(this)">Pending</button>
+              <button class="filter-tab" data-post-status="approved" onclick="App.setPostFilter(this)">Approved</button>
+              <button class="filter-tab" data-post-status="rejected" onclick="App.setPostFilter(this)">Rejected</button>
+            </div>
+          </div>
+        </div>
+        <div id="posts-table-container"></div>
+      </div>
+
+    </main>
+  </div><!-- /#page-team -->
+
+  <!-- ═══ INFLUENCER DASHBOARD ══════════════════════════════ -->
+  <div id="page-influencer" class="page">
+
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo">
+          <span class="logo-lp">LP</span>
+          <span class="logo-text">My Ambassador Hub</span>
+        </div>
+        <nav class="header-nav">
+          <button class="nav-tab active" data-inf-view="dashboard">Dashboard</button>
+          <button class="nav-tab" data-inf-view="campaigns">Campaigns</button>
+          <button class="nav-tab" data-inf-view="posts">My Posts</button>
+          <button class="nav-tab" data-inf-view="submit">Submit Post</button>
+        </nav>
+      </div>
+      <div class="header-right">
+        <span class="header-user-name" id="inf-user-name"></span>
+        <button class="btn-secondary btn-sm" onclick="App.logout()">Log Out</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- Dashboard View -->
+      <div class="inf-view active" id="inf-view-dashboard">
+        <div id="inf-tier-hero"></div>
+        <div id="inf-stats-row"></div>
+        <div class="inf-tiers-section">
+          <h2 class="inf-section-title">All Tiers &amp; Benefits</h2>
+          <div class="inf-tiers-grid" id="inf-tiers-display"></div>
+        </div>
+      </div>
+
+      <!-- Campaigns View -->
+      <div class="inf-view" id="inf-view-campaigns">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Active Campaigns</h1>
+          </div>
+        </div>
+        <div class="campaign-grid" id="inf-campaign-grid"></div>
+        <div id="inf-campaign-empty" class="empty-state" style="display:none">
+          <div class="empty-icon">📣</div>
+          <div class="empty-title">No campaigns right now</div>
+          <div class="empty-text">Check back soon—new campaigns will appear here.</div>
+        </div>
+      </div>
+
+      <!-- My Posts View -->
+      <div class="inf-view" id="inf-view-posts">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">My Posts</h1>
+          </div>
+          <div class="toolbar-right">
+            <button class="btn-primary" onclick="App.infNav('submit')">+ Submit Post</button>
+          </div>
+        </div>
+        <div id="inf-posts-list"></div>
+        <div id="inf-posts-empty" class="empty-state" style="display:none">
+          <div class="empty-icon">📱</div>
+          <div class="empty-title">No posts submitted yet</div>
+          <div class="empty-text">Submit your first post to start earning tier points!</div>
+          <button class="btn-primary" style="margin-top:16px" onclick="App.infNav('submit')">Submit Your First Post</button>
+        </div>
+      </div>
+
+      <!-- Submit Post View -->
+      <div class="inf-view" id="inf-view-submit">
+        <div class="view-toolbar">
+          <div class="toolbar-left">
+            <h1 class="view-title">Submit a Post</h1>
+          </div>
+        </div>
+        <div class="submit-form-wrap">
+          <form id="post-submit-form" onsubmit="App.submitPost(event)">
+            <div class="form-card">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Platform <span class="required">*</span></label>
+                  <select name="platform" class="form-input" required>
+                    <option value="">Select platform</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="TikTok">TikTok</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Date Posted <span class="required">*</span></label>
+                  <input type="date" name="date_posted" class="form-input" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Post URL / Link</label>
+                <input type="url" name="post_url" class="form-input" placeholder="https://instagram.com/p/..." />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Campaign (optional)</label>
+                  <select name="campaign_id" class="form-input" id="post-campaign-select">
+                    <option value="">Not part of a specific campaign</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Impressions / Views (if known)</label>
+                  <input type="number" name="impressions" class="form-input" placeholder="0" min="0" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Screenshot of Post <span class="required">*</span></label>
+                <div class="file-upload-area" id="screenshot-upload-area" onclick="document.getElementById('screenshot-file').click()">
+                  <input type="file" id="screenshot-file" name="screenshot" accept="image/*" style="display:none" onchange="App.handleScreenshotSelect(this)" />
+                  <div class="file-upload-icon">📷</div>
+                  <div class="file-upload-text">Click to upload screenshot</div>
+                  <div class="file-upload-hint">PNG, JPG up to 15MB</div>
+                </div>
+                <div id="screenshot-preview" style="display:none"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Notes (optional)</label>
+                <textarea name="notes" class="form-input form-textarea" rows="3" placeholder="Anything you want the Lovepop team to know about this post?"></textarea>
+              </div>
+              <div id="post-submit-error" class="form-error" style="display:none"></div>
+              <div id="post-submit-success" class="form-success" style="display:none">
+                <div class="success-icon">✓</div>
+                <div class="success-title">Post Submitted!</div>
+                <div class="success-text">Thanks! The Lovepop team will review and approve your post shortly. Approved posts count toward your tier.</div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-primary btn-large" id="post-submit-btn">Submit Post</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+  </div><!-- /#page-influencer -->
+
+  <!-- ═══ MODALS ═════════════════════════════════════════════ -->
+
+  <!-- Influencer Detail Modal -->
+  <div id="influencer-modal" class="modal-overlay" onclick="App.closeModal('influencer-modal')">
+    <div class="modal modal-wide" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 class="modal-title" id="inf-modal-title">Influencer Details</h2>
+        <button class="modal-close" onclick="App.closeModal('influencer-modal')">✕</button>
+      </div>
+      <div class="modal-body" id="inf-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Campaign Detail/Edit Modal -->
+  <div id="campaign-modal" class="modal-overlay" onclick="App.closeModal('campaign-modal')">
+    <div class="modal modal-wide" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 class="modal-title" id="camp-modal-title">Campaign</h2>
+        <button class="modal-close" onclick="App.closeModal('campaign-modal')">✕</button>
+      </div>
+      <div class="modal-body" id="camp-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Approve Modal -->
+  <div id="approve-modal" class="modal-overlay" onclick="App.closeModal('approve-modal')">
+    <div class="modal modal-sm" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 class="modal-title">Approve Ambassador</h2>
+        <button class="modal-close" onclick="App.closeModal('approve-modal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Set a login password for this ambassador. They will use this to access their dashboard.</p>
+        <div class="form-group" style="margin-top:16px">
+          <label class="form-label">Temporary Password</label>
+          <input type="text" id="approve-password" class="form-input" placeholder="e.g. Welcome2024" />
+        </div>
+        <div class="form-group">
+          <p class="form-hint">The ambassador will be able to change this once logged in. Send them: <strong id="approve-email-preview"></strong></p>
+        </div>
+        <div id="approve-error" class="form-error" style="display:none"></div>
+        <div class="form-actions">
+          <button class="btn-secondary" onclick="App.closeModal('approve-modal')">Cancel</button>
+          <button class="btn-primary" onclick="App.confirmApprove()">Approve &amp; Set Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Influencer Campaign View Modal -->
+  <div id="inf-campaign-modal" class="modal-overlay" onclick="App.closeModal('inf-campaign-modal')">
+    <div class="modal modal-wide" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 class="modal-title" id="inf-camp-modal-title">Campaign Details</h2>
+        <button class="modal-close" onclick="App.closeModal('inf-campaign-modal')">✕</button>
+      </div>
+      <div class="modal-body" id="inf-camp-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" style="display:none"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
