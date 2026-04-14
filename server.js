@@ -452,4 +452,14 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Lovepop Ambassador Program running on http://localhost:${PORT}`);
+  // Auto-seed if database is empty (first Railway deploy or fresh local start)
+  try {
+    const count = db.prepare('SELECT COUNT(*) as c FROM influencers').get().c;
+    if (count === 0) {
+      console.log('Database is empty — running seed...');
+      require('./scripts/seed.js');
+    }
+  } catch (e) {
+    console.error('Auto-seed failed:', e.message);
+  }
 });
